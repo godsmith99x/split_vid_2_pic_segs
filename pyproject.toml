@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "split-vid-2-pic_segs"
+version = "0.1.0"
+description = "Split video into individual frames and save as a picture"
+authors = ["Godsmith <jgodfrey-smith@pm.me>"]
+readme = "README.md"
+packages = [{include = "split_vid_2_pic_segs"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+imageio = "2.22.4"
+av = "^10.0.0"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "6.0.0"
+mypy = "0.991"
+black = "22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
